@@ -1,184 +1,264 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Sheedan</title>    <meta
+      name="description"
+      content="Portfolio professionnel de [Votre Nom], développeur web spécialisé en création de sites accessibles"
+    />
+    <link rel="stylesheet" href="asset/css/index.css" />
+    <link
+      rel="icon"
+      href="asset/favicon/2-removebg-preview.png"
+      type="image/png"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Nom Prénom</title>
-    <meta name="description"
-        content="Portfolio professionnel de [Votre Nom], développeur web spécialisé en création de sites accessibles">
-    <link rel="stylesheet" href="asset/css/index.css">
-    <link rel="icon" href="asset/favicon/2-removebg-preview.png" type="image/x-icon">
-</head>
-
-<body>
+  <body>
     <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
     <header role="banner">
-        <div class="header-content">
-            <h1>Votre Nom</h1>
-            <p class="tagline">Développeur Web & Créatif</p>
-        </div>
+      <div class="header-content">
+        <h1>Votre Nom</h1>
+        <p class="tagline">Développeur Web & Créatif</p>
+      </div>
     </header>
 
     <nav role="navigation" aria-label="Navigation principale">
-        <input type="checkbox" id="menu-toggle" aria-label="Ouvrir le menu de navigation">
-        <div class="nav-container">
-            <div class="nav-logo">Portfolio</div>
-            <label for="menu-toggle" class="burger-label" tabindex="0" role="button" aria-label="Menu burger">
-                <div class="burger-icon" aria-hidden="true">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </label>
-        </div>
-        <ul>
-            <li><a href="#about">À Propos</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <input
+        type="checkbox"
+        id="menu-toggle"
+        aria-label="Ouvrir le menu de navigation"
+      />
+      <div class="nav-container">
+        <a class="nav-logo" href="#top">Portfolio</a>
+
+        <label
+          for="menu-toggle"
+          class="burger-label"
+          aria-controls="navigation-menu">
+          <div class="burger-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>      <ul>
+        <li><a href="#about">À Propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
     <main id="main-content" role="main">
-        <div class="hero">
-            <div class="hero-icon">💻</div>
-            <p class="hero-text">Créons ensemble des expériences web exceptionnelles !</p>
+      <div class="hero">
+        <div class="hero-icon">💻</div>
+        <p class="hero-text">
+          Créons ensemble des expériences web exceptionnelles !
+        </p>
+      </div>
+
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">À Propos</h2>
+        <div class="speech-bubble">
+          <p>
+            <strong>Bonjour !</strong> Je suis un développeur web passionné par
+            la création d'expériences numériques accessibles et créatives. Mon
+            objectif est de rendre le web accessible à tous, tout en proposant
+            des designs originaux et engageants.
+          </p>
         </div>
+        <p>
+          Avec plusieurs années d'expérience dans le développement web, je me
+          spécialise dans la création de sites conformes aux normes RGAA et W3C,
+          garantissant une accessibilité optimale pour tous les utilisateurs.
+        </p>
+      </section>
 
-        <section id="about" aria-labelledby="about-title">
-            <h2 id="about-title">À Propos</h2>
-            <div class="speech-bubble">
-                <p><strong>Bonjour !</strong> Je suis un développeur web passionné par la création d'expériences
-                    numériques accessibles et créatives. Mon objectif est de rendre le web accessible à tous, tout en
-                    proposant des designs originaux et engageants.</p>
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Mes Projets</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div
+              class="project-header"
+              style="background: #2563eb; color: white"
+            >
+              <span>🎨</span>
             </div>
-            <p>Avec plusieurs années d'expérience dans le développement web, je me spécialise dans la création de sites
-                conformes aux normes RGAA et W3C, garantissant une accessibilité optimale pour tous les utilisateurs.
-            </p>
-        </section>
-
-        <section id="projects" aria-labelledby="projects-title">
-            <h2 id="projects-title">Mes Projets</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-header" style="background: #2563eb; color: white;">
-                        <span>🎨</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Projet 1</h3>
-                        <p>Description du projet avec ses objectifs principaux et les technologies utilisées. Ce projet
-                            démontre mes compétences en développement accessible.</p>
-                        <a href="#" class="btn" aria-label="Voir les détails du Projet 1">Voir le projet</a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header" style="background: #10b981; color: white;">
-                        <span>🚀</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Projet 2</h3>
-                        <p>Un autre projet remarquable qui met en avant mes capacités à créer des interfaces utilisateur
-                            modernes et conformes aux standards d'accessibilité.</p>
-                        <a href="#" class="btn" aria-label="Voir les détails du Projet 2">Voir le projet</a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header" style="background: #f59e0b; color: white;">
-                        <span>⚡</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Projet 3</h3>
-                        <p>Application web innovante développée avec les dernières technologies, respectant les normes
-                            RGAA et offrant une expérience utilisateur exceptionnelle.</p>
-                        <a href="#" class="btn" aria-label="Voir les détails du Projet 3">Voir le projet</a>
-                    </div>
-                </article>
+            <div class="project-content">
+              <h3>Projet 1</h3>
+              <p>
+                Description du projet avec ses objectifs principaux et les
+                technologies utilisées. Ce projet démontre mes compétences en
+                développement accessible.
+              </p>
+              <a href="#" class="btn" aria-label="Voir les détails du Projet 1"
+                >Voir le projet</a
+              >
             </div>
-        </section>
+          </article>
 
-        <section id="skills" aria-labelledby="skills-title">
-            <h2 id="skills-title">Compétences</h2>
-            <p>Voici les technologies et compétences que je maîtrise :</p>
-            <ul class="skills-list" aria-label="Liste des compétences techniques">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Flexbox</li>
-                <li>Accessibilité RGAA</li>
-                <li>Standards W3C</li>
-                <li>Responsive Design</li>
-                <li>Git</li>
-            </ul>
-        </section>
-
-        <section id="contact" aria-labelledby="contact-title">
-            <h2 id="contact-title">Contact</h2>
-            <div class="contact-content">
-                <div class="speech-bubble">
-                    <p><strong>Une question ? Un projet ?</strong></p>
-                    <p>N'hésitez pas à me contacter via ce formulaire !</p>
-                </div>
-
-                <form class="contact-form" action="traitement.php" method="post">
-                    <div class="form-row">
-                        <div class="form-group half">
-                            <label for="nom">
-                                Nom <span aria-label="requis">*</span>
-                            </label>
-                            <input type="text" id="nom" name="nom" required aria-required="true"
-                                placeholder="Votre nom">
-                        </div>
-
-                        <div class="form-group half">
-                            <label for="prenom">
-                                Prénom <span aria-label="requis">*</span>
-                            </label>
-                            <input type="text" id="prenom" name="prenom" required aria-required="true"
-                                placeholder="Votre prénom">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">
-                            Email <span aria-label="requis">*</span>
-                        </label>
-                        <input type="email" id="email" name="email" required aria-required="true"
-                            placeholder="votre.email@example.com">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">
-                            Message <span aria-label="requis">*</span>
-                        </label>
-                        <textarea id="message" name="message" required aria-required="true"
-                            placeholder="Votre message..."></textarea>
-                    </div>
-
-                    <button type="submit" class="btn">Envoyer le message</button>
-                </form>
-
-                <div class="contact-buttons">
-                    <a href="https://linkedin.com/in/votre-profil" class="btn" target="_blank"
-                        rel="noopener noreferrer">
-                        💼 LinkedIn
-                    </a>
-                    <a href="https://github.com/votre-profil" class="btn" target="_blank" rel="noopener noreferrer">
-                        🔧 GitHub
-                    </a>
-                </div>
+          <article class="project-card">
+            <div
+              class="project-header"
+              style="background: #10b981; color: white"
+            >
+              <span>🚀</span>
             </div>
-        </section>
+            <div class="project-content">
+              <h3>Projet 2</h3>
+              <p>
+                Un autre projet remarquable qui met en avant mes capacités à
+                créer des interfaces utilisateur modernes et conformes aux
+                standards d'accessibilité.
+              </p>
+              <a href="#" class="btn" aria-label="Voir les détails du Projet 2"
+                >Voir le projet</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div
+              class="project-header"
+              style="background: #f59e0b; color: white"
+            >
+              <span>⚡</span>
+            </div>
+            <div class="project-content">
+              <h3>Projet 3</h3>
+              <p>
+                Application web innovante développée avec les dernières
+                technologies, respectant les normes RGAA et offrant une
+                expérience utilisateur exceptionnelle.
+              </p>
+              <a href="#" class="btn" aria-label="Voir les détails du Projet 3"
+                >Voir le projet</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Compétences</h2>
+        <p>Voici les technologies et compétences que je maîtrise :</p>
+        <ul class="skills-list" aria-label="Liste des compétences techniques">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Flexbox</li>
+          <li>Accessibilité RGAA</li>
+          <li>Standards W3C</li>
+          <li>Responsive Design</li>
+          <li>Git</li>
+        </ul>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <div class="contact-content">
+          <div class="speech-bubble">
+            <p><strong>Une question ? Un projet ?</strong></p>
+            <p>N'hésitez pas à me contacter via ce formulaire !</p>
+          </div>
+
+          <form class="contact-form" action="traitement.php" method="post">
+            <div class="form-row">
+              <div class="form-group half">
+                <label for="nom">
+                  Nom <span aria-label="requis">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  required
+                  aria-required="true"
+                  placeholder="Votre nom"
+                />
+              </div>
+
+              <div class="form-group half">
+                <label for="prenom">
+                  Prénom <span aria-label="requis">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="prenom"
+                  name="prenom"
+                  required
+                  aria-required="true"
+                  placeholder="Votre prénom"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">
+                Email <span aria-label="requis">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-required="true"
+                placeholder="votre.email@example.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">
+                Message <span aria-label="requis">*</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                aria-required="true"
+                placeholder="Votre message..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn">Envoyer le message</button>
+          </form>
+
+          <div class="contact-buttons">
+            <a
+              href="https://www.linkedin.com/in/sheedan-hyman-60a878350/"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              💼 LinkedIn
+            </a>
+            <a
+              href="https://github.com/sheedrdh"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🔧 GitHub
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer role="contentinfo">
-        <p>&copy; 2025 Votre Nom. Tous droits réservés.</p>
-        <p>Portfolio conçu avec Flexbox, accessibilité et conformité W3C</p>
+      <p>&copy; 2025 Votre Nom. Tous droits réservés.</p>
+      <p>Portfolio conçu avec Flexbox, accessibilité et conformité W3C</p>
     </footer>
-</body>
 
+    <!-- Bouton haut de page -->
+    <a
+      href="#top"
+      class="back-to-top"
+      aria-label="Retour en haut de la page"
+      title="Retour en haut"
+    ></a>
+  </body>
 </html>
