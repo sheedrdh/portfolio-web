@@ -6,6 +6,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
     $message = htmlspecialchars(trim($_POST['message']));
     
+?>
+
+
+
+<?php  
+ 
+$sql =   ''  ;
+
     // Validation de l'email
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         header("Location: index.html?error=email");
